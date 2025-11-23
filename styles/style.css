@@ -44,10 +44,8 @@ ol {
 /*базовые стили*/
 
 .content {
-  height: 100vh;
   align-content: center;
   display: grid;
-  grid-template-rows: 530px;
   grid-template-columns: 711px 400px;
   gap: 30px;
   align-items: end;
@@ -171,7 +169,7 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
+  display: flex;
   width: 19px;
   height: 19px;
   background-color: transparent;
@@ -259,7 +257,7 @@ ol {
 .content__list-container {
   height: 299px;
   width: 400px;
-  overflow-x: hidden;
+  overflow: auto;
   position: relative;
 }
 
@@ -267,6 +265,12 @@ ol {
   margin-bottom: 29px;
   padding-left: 3px;
   padding-right: 3px;
+}
+
+/*обнуление отступа у последнего элемента списка*/
+
+.content__list-item:last-child {
+  margin-bottom: 0px;
 }
 
 .content__card-link {
@@ -286,7 +290,6 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 .content__card-link:active {
@@ -340,9 +343,9 @@ ol {
 }
 
 .more-button {
-  width: 99%;
+  width: 390px;
   height: 34px;
-  margin: 2px;
+  margin-left: 3px;
 }
 
   
