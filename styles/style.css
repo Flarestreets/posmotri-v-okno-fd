@@ -49,7 +49,6 @@ ol {
   grid-template-columns: 711px 400px;
   gap: 30px;
   align-items: end;
-  padding-left: 26px;
 }
 
 .visually-hidden {
@@ -316,7 +315,7 @@ ol {
 }
 
 .content__video-card-description-container { 
-  padding-top: 2px;
+  padding-top: 3px;
 }
 
 .content__video-card-title {
